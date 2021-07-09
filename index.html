@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lato">
+
+		<title>Sonic 3D Blast Practice Rom Patcher</title>
+		<script type="module" src="script.js?v005"></script>
+		<link rel="stylesheet" href="style.css?v005">
+
+
+	</head>
+	<body>
+		<div id="drop-areaholder">
+			<div id="drop-area">
+				<form class="my-form">
+					<p>Drop your Normal Sonic 3D Blast Rom here.</p>
+					
+					<input type="file" id="fileElem" accept=".bin" onchange="handleFiles(this.files)">
+					<label class="button" for="fileElem">Select .bin file</label>
+				</form>
+
+			<div id="progressbar" class="hidden">
+				Please wait....
+			</div>
+			</div>
+		</div>
+
+		<div id="results" class="hidden">
+			
+			<a href="" class="s3drom" download="Sonic3DBlastPracticeRom.bin">Sonic 3D Practice Rom</a>
+		</div>
+	</body>
+</html>
